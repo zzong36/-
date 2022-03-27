@@ -1,10 +1,12 @@
-package chp07;
+package chp07.time;
 
 class Time {
 private int hour, minute, second;
 	
 	Time(int hour, int minute, int second){
 		setHour(hour);
+		setMinute(minute);
+		setSecond(second);
 	}
 	
 	public int getHour() { // 이것의 존재의의는 뭘까?
@@ -29,7 +31,7 @@ private int hour, minute, second;
 	}
 	
 	public void setSecond(int second) {
-		if(second < 0 || second > 23) return; 
+		if(second < 0 || second > 59) return; 
 		this.second = second;
 	}
 	
